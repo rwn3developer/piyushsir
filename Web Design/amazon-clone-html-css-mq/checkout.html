@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="select-search">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Search Amazon">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-signin border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & List</p>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+
+            <div class="panel-ops">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="product.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="cart.html">Cart</a>
+                    </li>
+                    <li>
+                        <a href="checkout.html">Checkout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+
+
+    <div class="checkout-page">
+        <h1>Checkout</h1>
+        <form action="#" method="POST" class="checkout-form">
+            <div class="section">
+                <h2>Shipping Address</h2>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required>
+
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+
+            <div class="section">
+                <h2>Payment Details</h2>
+                <label for="card-name">Name on Card</label>
+                <input type="text" id="card-name" name="card-name" required>
+
+                <label for="card-number">Credit Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <label for="exp-month">Exp Month</label>
+                <input type="text" id="exp-month" name="exp-month" required>
+
+                <label for="exp-year">Exp Year</label>
+                <input type="text" id="exp-year" name="exp-year" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Place Order</button>
+        </form>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footerbox">
+                <h4>Get to Know Us</h4>
+                <p>Careers</p>
+                <p>Blog</p>
+                <p>About Amazone</p>
+                <p>Investor Relations</p>
+                <p>Amazon Devices</p>
+                <p>Amazon Devices</p>
+            </div>
+            <div class="footerbox">
+                <h4>Make Money with Us</h4>
+                <p>Sell on Amazon Business</p>
+                <p>Sell products on Amazon</p>
+                <p>Sell apps on Amazon</p>
+                <p>Become an Affiliate</p>
+                <p>Advertise Your Products</p>
+                <p>Self-Publish with Us</p>
+                <p>Host an Amazon Hub</p>
+            </div>
+            <div class="footerbox">
+                <h4>Amazon Payment Products</h4>
+                <p>Amazon Business Card</p>
+                <p>Shop with Points</p>
+                <p>Reload Your Balance</p>
+                <p>Amazon Currency Converter</p>
+            </div>
+            <div class="footerbox">
+                <h4>Let Us Help You</h4>
+                <p>Amazon and COVID-19</p>
+                <p>Your Account</p>
+                <p>Your Orders</p>
+                <p>Shipping Rates & Policies</p>
+                <p>Returns & Replacements</p>
+                <p>Manage Your Content and Devices</p>
+                <p>Help</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
