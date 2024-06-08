@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Billing App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="heading">
+        <h3>Restaurant Billing System</h3>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12 p-5 shadow">
+                <h4 align="center">Customer Details</h4>
+                <form id="customerForm">
+                    <div class="mb-3">
+                        <label for="customerName" class="form-label">Customer Name</label>
+                        <input type="text" id="customerName" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Contact</label>
+                        <input type="text" id="contact" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="billNo" class="form-label">Bill No</label>
+                        <input type="text" id="billNo" class="form-control" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        Starter
+                    </div>
+                    <div class="card-body">
+                        <form id="starterForm">
+                            <div class="mb-3">
+                                <label for="samosa" class="form-label">Samosa</label>
+                                <input type="number" id="samosa" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="paneerTikka" class="form-label">Paneer Tikka</label>
+                                <input type="number" id="paneerTikka" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="chickenTikka" class="form-label">Chicken Tikka</label>
+                                <input type="number" id="chickenTikka" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="papadiChat" class="form-label">Papadi Chat</label>
+                                <input type="number" id="papadiChat" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tomatoSoup" class="form-label">Tomato Soup</label>
+                                <input type="number" id="tomatoSoup" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="masalaPapad" class="form-label">Masala Papad</label>
+                                <input type="number" id="masalaPapad" class="form-control" value="0">
+                            </div>
+                            <button type="button" onclick="displaySummary()" class="btn btn-success">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        Main Course
+                    </div>
+                    <div class="card-body">
+                        <form id="mainCourseForm">
+                            <div class="mb-3">
+                                <label class="form-label">Butter Chicken</label>
+                                <input type="number" id="butterchicken" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Pasta</label>
+                                <input type="number" id="pasta" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Basmati Rice</label>
+                                <input type="number" id="basmatirice" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Paneer Masala</label>
+                                <input type="number" id="paneermasala" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Palak Paneer</label>
+                                <input type="number" id="palakpaneer" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Daal</label>
+                                <input type="number" id="dal" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Chhole Bhature</label>
+                                <input type="number" id="chholebhature" class="form-control" value="0">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        Snacks
+                    </div>
+                    <div class="card-body">
+                        <form id="snacksForm">
+                            <div class="mb-3">
+                                <label for="samosaSnack" class="form-label">Noodles</label>
+                                <input type="number" id="noodels" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="springRoll" class="form-label">Aloo Tikki Chat</label>
+                                <input type="number" id="alootikichat" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="vegPuff" class="form-label">Dahi Vaada</label>
+                                <input type="number" id="dahivada" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="paneerRoll" class="form-label">Pav Bhaji</label>
+                                <input type="number" id="pavbhaji" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="paneerRoll" class="form-label">Bhel Puri</label>
+                                <input type="number" id="bhelpuri" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="paneerRoll" class="form-label">Soup</label>
+                                <input type="number" id="soup" class="form-control" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="paneerRoll" class="form-label">Pokara</label>
+                                <input type="number" id="pokara" class="form-control" value="0">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-5 pb-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Billing Summary
+                    </div>
+                    <div class="card-body" id="billingSummary">
+                        <!-- Billing summary will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+
+        //create object because multiple value get 
+        const prices = {
+            starter: {
+                samosa: 10,
+                paneerTikka: 20,
+                chickenTikka: 30,
+                papadiChat: 15,
+                tomatoSoup: 12,
+                masalaPapad: 8
+            },
+            mainCourse: {
+                butterchicken: 20,
+                pasta: 120,
+                basmatirice: 60,
+                paneermasala: 150,
+                palakpaneer: 120,
+                dal: 100,
+                chholebhature: 80
+            },
+            snacks: {
+                noodels: 90,
+                alootikichat: 120,
+                dahivada: 50,
+                pavbhaji: 100,
+                bhelpuri: 50,
+                soup: 110,
+                pokara: 50
+            }
+        };
+
+        function calculateBill() {
+            let total = 0;
+            const categories = ['starter', 'mainCourse', 'snacks'];
+
+            categories.forEach(category => {
+                for (const item in prices[category]) {
+                    const quantity = parseInt(document.getElementById(item).value) || 0;
+                    total += prices[category][item] * quantity;
+                }
+            });
+
+            return total;
+        }
+
+        function displaySummary() {
+            const customerName = document.getElementById('customerName').value;
+            const contact = document.getElementById('contact').value;
+            const billNo = document.getElementById('billNo').value;
+            const totalAmount = calculateBill();
+
+            let groceryprice = totalAmount * 23 / 100;
+            let beautyhygineprice = totalAmount * 1 / 100;
+            let snacktax = totalAmount * 5 / 100
+            let grocerytax = totalAmount * 10 / 100
+            let beautyhyginetax = totalAmount * 10 / 100
+
+            document.getElementById('billingSummary').innerHTML = `
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>Customer Name: ${customerName}</h5>
+                        <h5>Contact: ${contact}</h5>
+                        <h5>Bill No: ${billNo}</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>Total Snack Price: ${totalAmount.toFixed(2)}</h5>
+                        <h5>Total Grocery Price: ${groceryprice.toFixed(2)}</h5>
+                        <h5>Total Beauty & Hygiene Price: ${beautyhygineprice.toFixed(2)}</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>Snack Tax: ${snacktax.toFixed(2)}</h5>
+                        <h5>Grocery Tax: ${grocerytax.toFixed(2)}</h5>
+                        <h5>Beauty & Hygiene Tax: ${beautyhyginetax.toFixed(2)}</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>Grand Total: ${(totalAmount + snacktax + grocerytax + beautyhyginetax).toFixed(2)}</h5>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-between align-items-center">
+                        <button class="btn btn-success btn-sm" onclick="displayTotalBill()">Total Bill</button>
+                        <button class="btn btn-danger btn-sm" onclick="clearForm()">Clear</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function displayTotalBill() {
+            const totalAmount = calculateBill();
+            let groceryprice = totalAmount * 23 / 100;
+            let beautyhygineprice = totalAmount * 1 / 100;
+            let snacktax = totalAmount * 5 / 100
+            let grocerytax = totalAmount * 10 / 100
+            let beautyhyginetax = totalAmount * 10 / 100
+            let grandTotal = totalAmount + snacktax + grocerytax + beautyhyginetax;
+
+            alert(`Grand Total: ${grandTotal}`);
+        }
+
+        function clearForm() {
+            document.getElementById('customerForm').reset();
+            document.getElementById('starterForm').reset();
+            document.getElementById('mainCourseForm').reset();
+            document.getElementById('snacksForm').reset();
+            document.getElementById('billingSummary').innerHTML = '';
+        }
+    </script>
+</body>
+
+</html>

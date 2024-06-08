@@ -1,0 +1,180 @@
+/* https://www.youtube.com/watch?v=HDQvREbM4ek */
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Josefin Sans", sans-serif;
+    color: #4255A4;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: normal;
+}
+
+.menu button:hover{
+    background-color: #fff;
+    color: black;
+    transition: all 0.5s;
+}
+
+
+.header{
+    background-image: url("./images/h1_hero.png");
+    height: 854px;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    /* padding: 35px 0px; */
+    height: 103px;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    /* padding: 35px 0px; */
+    height: 103px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu div{
+    margin: 0px 14px;
+    color: white;
+    font-weight: 600;
+}
+
+.menu button{
+    padding: 10px 38px;
+    margin-left: 42px;
+    background-color: #FF9F67;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.hero__caption h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.hero__caption p{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 22px;
+}
+
+.hero__caption button{
+    background-color: #FF9F67;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 38px;
+}
+
+.hero__caption{
+    padding: 120px 0px;
+    
+}
+
+.featured-course{
+    padding: 100px 0px;
+}
+
+.course-text h2{
+    padding-bottom: 21px;
+    font-size: 42px;
+    font-weight: 600;
+}
+.featured-course-box{
+    padding: 20px;
+}
+.course-img img{
+    width: 100%;
+}
+
+.course-caption{
+    padding: 20px;
+}
+
+.course-caption p{
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6E7697;
+}
+
+.course-caption h3{
+    font-size: 20px;
+}
+
+.course-caption h3 a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.course-footer{
+    margin-bottom: 22px;
+}
+
+.course-footer .rating i{
+    font-size: 14px;
+    color:#FF7B2E;
+    font-weight: 900;
+}
+
+.course-footer .price span{
+    font-size: 22px;
+    color: #4255A4;
+}
+
+.restaurant-name{
+    margin-bottom: 22px;
+}
+
+.course-footer button{
+    width: 100%;
+    padding: 17px 0px;
+    border: 1px solid orange;
+    background:transparent;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+
+.course-footer button:hover{
+    background-color: #FF9F67;
+    
+    color:white;
+    
+}   
+
+.about-are p{
+    color: red;
+}
+
+.about-are title{
+
+}
+
+.about-are .title h2{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.3;
+} 
+
+.about-are .title p{
+    margin-top: 21px;
+    color: #10285d;
+}
+
+.about-are .title .features{
+    margin-top: 42px;
+}
